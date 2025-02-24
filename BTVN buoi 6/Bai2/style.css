@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+}
+.marker-none{
+    list-style: none;
+}
+.red-bg{
+    background-color: rgb(248, 71, 71);
+}
+.green-bg{
+    background-color: rgb(41, 167, 41);
+}
+.orange-bg{
+    background-color: rgb(240, 203, 134);
+}
+.blue-bg{
+    background-color: rgb(24, 245, 245);
+
+}
+.purple-bg{
+    background-color: rgb(231, 54, 231);
+}
+.greenyellow{
+    background-color: rgb(161, 238, 45);
+}
+.color{
+    color: white;
+}
+.jc-center{
+    justify-content: center;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.max-width{
+    max-width: 1000px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.b-radius{
+    border-radius: 15px;
+}
+.b-radius2{
+    border-radius: 50%;
+}
+.width{
+    width: 250px;
+}
+.width2{
+    width: 40px;
+}
+.height{
+    height: 150px;
+}
+.height2{
+    height: 40px;
+}
+.ma{
+    margin: 15px;
+}
+.pa-left{
+    padding-left: 10px;
+}
+.ma-left{
+    margin-left: 250px;
+}
+.box-shadow{
+    box-shadow: 1px 1px 1px 1px;
+}
+.align-items{
+    align-items: center;
+}
+.gap{
+    gap: 10px;
+}
+
+.link{
+    text-decoration: none;
+
+}

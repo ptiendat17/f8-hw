@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.size{
+    max-width: 500px;
+    height: 1000px;
+}   
+.color{
+    color: red;
+}
+.bg{
+    background-color: grey;
+}
+.width--35px{
+    width: 35px;
+}
+.height--35px{
+    height: 35px;
+}
+.d-plex{
+    display: flex;
+}
+.jc-center{
+    justify-content: center;
+}
