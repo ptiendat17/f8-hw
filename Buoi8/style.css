@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .menu-icon span {
+        font-size: 20px;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 50%; 
+    }
+    .menu-mobile {
+        display: none;
+    }
+    body {
+        position: relative;
+    }
+    #show:checked ~ .menu-mobile {
+        display: block;
+        z-index: 2;
+        width: 40%;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: green;
+    }
+    .menu-mobile a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: block;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+    .mobile {
+        list-style-type: none;
+    }
+    .sub-mobile {
+        display: none;
+        list-style: none;
+    }
+    .mobile > li > a:focus-within + .sub-mobile {
+        display: block;
+        padding-left: 15px;
+        background-color: rgb(240, 157, 157);
+    }
+    .close {
+        border: none;
+        background-color: green;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    .overlay {
+        display: none;
+    }
+    #show:checked ~ .overlay {
+        display: block;
+        z-index: 1;
+        position: fixed;
+        background-color: rgb(0, 0, 0, 0.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 600px) {
+    .menu-icon {
+        display: none;
+    }
+    .menu-mobile {
+        display: none;
+    }
+    .pc {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        position: relative;
+    }
+    .pc, .header {
+        list-style: none;
+    }
+    .pc > li > a {
+        display: block;
+        padding: 20px 10px;
+        text-decoration: none;
+        font-size: 24px;
+        color: black;
+        font-weight: 600;
+    }
+    .pc > li:hover {
+        background-color: #f1a5cf;
+        border-radius: 10px;
+    }
+    .header {
+        display: none;
+    }
+    .pc > li:hover .header, .header:hover {
+        display: block;
+        position: absolute;
+        top: 100%;
+        padding-top: 10px;
+    }
+    .header a {
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 22px;
+        background-color: #f89090;
+        color: #ffffff;
+    }
+}

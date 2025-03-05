@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css
+    "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"
+            ><img src="/images/1.png" width="150px" height="100px" alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="pc">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Product</a>
+              <ul class="header">
+                <li><a href="#">Iphone</a></li>
+                <li><a href="#">Samsung</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+              <ul class="header">
+                <li><a href="#">ABCD</a></li>
+                <li><a href="#">EFGH</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon">
+          <label for="show">
+            <span class="mdi mdi-menu"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="show" hidden />
+      <div class="menu-mobile">
+        <ul class="mobile">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Product</a>
+            <ul class="sub-mobile">
+              <li><a href="#">Iphone</a></li>
+              <li><a href="#">Samsung</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+            <ul class="sub-mobile">
+              <li><a href="#">ABCD</a></li>
+              <li><a href="#">EFGH</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <button type="button" class="close">
+          <label for="show">
+            <span class="mdi mdi-close-circle"></span>
+          </label>
+        </button>
+      </div>
+      <label for="show" class="overlay"> </label>
+    </header>
+  </body>
+</html>
